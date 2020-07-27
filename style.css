@@ -1,3 +1,8 @@
+* {
+    --main:rgb(36, 36, 36);
+    --second: #ffffff55;
+}
+
 #background_base {
 	background: linear-gradient(to right, #4834d4, #ff4757);
 }
@@ -12,7 +17,7 @@
 .h1 {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 6rem;
-	color: rgb(36, 36, 36);
+	color: var(--main);
 	text-transform: uppercase;
 	letter-spacing: 12px;
 }
@@ -21,7 +26,7 @@
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 3rem;
 	text-transform: uppercase;
-	color: rgb(36, 36, 36);
+	color: var(--main);
 	letter-spacing: 10px;
 	margin-top: 7em;
 }
@@ -57,8 +62,8 @@ button {
 }
 
 button:hover {
-	box-shadow: 0px 0px 50px #ffffff55;
-	border: 2px solid #ffffff55;
+	box-shadow: 0px 0px 50px var(--second);
+	border: 2px solid var(--second);
 	color: #202020;
 }
 
